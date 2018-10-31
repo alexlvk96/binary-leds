@@ -13,7 +13,7 @@ Python v3 (inclus in sistemul de operare Raspbian)
 CIRCUIT
 
 Se utilizeaza pinii 12,16,18,22,24,26,32,36 ca surse de tensiune pentru leduri. Se utilizeaza pinul 6 ca pin de impamantare.
-Schema circuitului este prezentata in poza Circuit.png si P1.jpg.
+Schema circuitului este prezentata in pozele Circuit.png si P1.jpg.
 
 UTILIZARE
 
