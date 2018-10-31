@@ -18,7 +18,7 @@ Schema circuitului este prezentata in pozele Circuit.png si P1.jpg.
 UTILIZARE
 
 La introducerea unui numar intreg si pozitiv de la tastatura, el va fi convertit in binar si reprezentat pe 8 biti cu ajutorul ledurilor.
-De exemplu, pentru n=239, reprezentarea sa in binar pe 8 biti este 11101111 si reprezentarea cu ajutorul ledurilor in imaginea P3.
+De exemplu, pentru n=239, reprezentarea sa in binar pe 8 biti este 11101111 si reprezentarea cu ajutorul ledurilor in imaginea P3. Folosind doar 8 biti, cel mai mare numar care poate fi reprezentat este 255.
 
 
 
