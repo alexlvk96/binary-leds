@@ -1,6 +1,6 @@
 # binary-leds
 
-Reprezentarea fizica cu ajutorul ledurilor a unui numar binar pe 8 biti.
+Reprezentarea cu ajutorul ledurilor a unui numar binar pe 8 biti.
 
 HARDWARE
 
