@@ -21,4 +21,6 @@ La introducerea unui numar intreg si pozitiv de la tastatura, el va fi convertit
 De exemplu, pentru n=239, reprezentarea sa in binar pe 8 biti este 11101111 si reprezentarea cu ajutorul ledurilor in imaginea P3.
 
 
+
+
 Alexandru Romanet - Universitatea Petrol-Gaze din Ploiesti
