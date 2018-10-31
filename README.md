@@ -1,2 +1,2 @@
 # binary-leds
-Using LEDs to represent binary bits.
+Using LEDs to physicaly represent binary bits.
