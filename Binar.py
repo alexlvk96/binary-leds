@@ -18,10 +18,13 @@ rest=''
 vector=[0,1,2,3,4,5,6,7] #vector leduri
 
 for x in range (8): #transformare decimal -> binar
-    r=int%2
-    int=int//2
-    rest+=str(r)
-    vector[x]=r #vector leduri
+    if int>255: #cea mai mare valoare reprezentata pe 8 biti este 255(10) -> 11111111(2)
+        break
+    else:
+        r=int%2
+        int=int//2
+        rest+=str(r)
+        vector[x]=r #vector leduri
     
 rest=rest[::-1] #intoarecerea sirului rest
 print(rest)
