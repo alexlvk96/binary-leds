@@ -19,6 +19,7 @@ vector=[0,1,2,3,4,5,6,7] #vector leduri
 
 for x in range (8): #transformare decimal -> binar
     if int>255: #cea mai mare valoare reprezentata pe 8 biti este 255(10) -> 11111111(2)
+        print("Numar introdus este >255")
         break
     else:
         r=int%2
