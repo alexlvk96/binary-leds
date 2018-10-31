@@ -1,10 +1,10 @@
-import RPi.GPIO as GPIO 
+import RPi.GPIO as GPIO #libraria GPIO
 from time import sleep 
 import math
-GPIO.setwarnings(False) 
+GPIO.setwarnings(False) #ignorare alerte pini GPIO 
 GPIO.setmode(GPIO.BOARD)
 
-GPIO.setup(12, GPIO.OUT, initial=GPIO.LOW)
+GPIO.setup(12, GPIO.OUT, initial=GPIO.LOW) #definire pin ca fiind pin de iesire si setarea tensiunii initiale
 GPIO.setup(16, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(18, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(22, GPIO.OUT, initial=GPIO.LOW)
@@ -13,23 +13,23 @@ GPIO.setup(26, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(32, GPIO.OUT, initial=GPIO.LOW)
 GPIO.setup(36, GPIO.OUT, initial=GPIO.LOW)
 
-int=int(input('n='))
-rest=''
-vector=[0,1,2,3,4,5,6,7]
+int=int(input('n=')) #citirea de la tastatura a lui 'n'
+rest='' 
+vector=[0,1,2,3,4,5,6,7] #vector leduri
 
-for x in range (8):
+for x in range (8): #transformare decimal -> binar
     r=int%2
     int=int//2
     rest+=str(r)
-    vector[x]=r
+    vector[x]=r #vector leduri
     
-rest=rest[::-1]
+rest=rest[::-1] #intoarecerea sirului rest
 print(rest)
 
-if vector[7]==1:
-    GPIO.output(12, GPIO.HIGH)
+if vector[7]==1: #testarea valoarei vectorului
+    GPIO.output(12, GPIO.HIGH) #daca prima cifra este '1', ledul se aprinde
 else:
-    GPIO.output(12, GPIO.LOW)
+    GPIO.output(12, GPIO.LOW) #daca nu, ramane stins / este stins
     
 if vector[6]==1:
     GPIO.output(16, GPIO.HIGH)
@@ -67,8 +67,8 @@ else:
     GPIO.output(36, GPIO.LOW)
 
     
-sleep(15)
-GPIO.output(12, GPIO.LOW)
+sleep(15) #timp stationare 15 secunde
+GPIO.output(12, GPIO.LOW) #oprirea pinilor dupa trecerea timpului de stationare
 GPIO.output(16, GPIO.LOW)
 GPIO.output(18, GPIO.LOW)
 GPIO.output(22, GPIO.LOW)
