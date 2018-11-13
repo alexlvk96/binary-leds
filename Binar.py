@@ -27,7 +27,7 @@ for x in range (8): #transformare decimal -> binar
         rest+=str(r)
         vector[x]=r #vector leduri
     
-rest=rest[::-1] #intoarecerea sirului rest
+rest=rest[::-1] #intoarcerea sirului rest
 print(rest)
 
 if vector[7]==1: #testarea valoarei vectorului
